@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mainspring — Shop software for heritage repair trades</title>
+  <meta name="description" content="Job tracking, customer status pages, estimate approvals and service reminders for clock, watch, typewriter, camera and fountain-pen repair shops.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Karla:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="#top">Main<span>spring</span></a>
+    <nav class="site-nav" id="site-nav">
+      <a href="#product">Product</a>
+      <a href="#status">Status pages</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-solid" href="#waitlist">Join the waitlist</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">Shop software for heritage repair trades</p>
+      <h1>The ticket book had a good run.</h1>
+      <p class="lede">
+        Mainspring replaces the carbon-paper claim ticket with job tracking,
+        customer status pages, written estimate approvals and service reminders.
+        It was built for clock and watch repairers, typewriter shops, camera
+        technicians and every other trade the big software companies forgot.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-solid btn-lg" href="#waitlist">Join the waitlist</a>
+        <a class="btn btn-ghost btn-lg" href="#status">See a status page</a>
+      </div>
+      <p class="fineprint">Opening to a first group of shops soon. Founding shops get three months free.</p>
+    </div>
+
+    <div class="wrap trades-strip" aria-label="Trades Mainspring is built for">
+      <span>Clock &amp; watch repair</span>
+      <span>Typewriters</span>
+      <span>Film cameras</span>
+      <span>Fountain pens</span>
+      <span>Sewing machines</span>
+      <span>Turntables &amp; radios</span>
+      <span>Music boxes</span>
+    </div>
+  </section>
+
+  <!-- ============ 01 THE PROBLEM ============ -->
+  <section class="section" id="problem">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-no">01</span>
+        <h2>What the paper ticket<br>actually costs.</h2>
+      </div>
+      <div class="split">
+        <div class="prose">
+          <p>
+            A good bench runs a backlog. Eight weeks is normal, and a well-known
+            clock shop can run six months without anyone blinking. The trouble
+            starts when those waiting customers pick up the phone, because every
+            call pulls your hands off a movement and pushes the queue a little
+            further out.
+          </p>
+          <p>
+            Meanwhile the whole job lives on a paper ticket: one copy stapled to
+            a manila envelope, one in the customer&rsquo;s wallet, and the estimate
+            agreed to over the phone with nothing in writing. When a ticket goes
+            missing, so does the job history. When the shop&rsquo;s founder retires,
+            forty years of customer records retire with them.
+          </p>
+          <p>
+            The software industry never came for these trades because each shop
+            is small. But there are thousands of them, the analog revival is
+            filling their queues, and right-to-repair law is sending them work
+            the manufacturers used to hoard. They deserve tooling that isn&rsquo;t a
+            phone-repair franchise system with the logo swapped.
+          </p>
+        </div>
+        <aside class="figures">
+          <div class="figure">
+            <strong>8&ndash;12 weeks</strong>
+            <span>typical backlog at an independent repair bench</span>
+          </div>
+          <div class="figure">
+            <strong>&ldquo;Is it ready?&rdquo;</strong>
+            <span>the call that interrupts more bench hours than any other</span>
+          </div>
+          <div class="figure">
+            <strong>3&ndash;5 years</strong>
+            <span>service interval for a mechanical clock, and repeat work that nobody schedules</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 02 THE PRODUCT ============ -->
+  <section class="section section-tint" id="product">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-no">02</span>
+        <h2>Everything a job needs,<br>from counter to collection.</h2>
+      </div>
+
+      <div class="bench-demo" role="img" aria-label="Screenshot of the Mainspring bench queue">
+        <div class="bench-chrome">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="bench-title">Mainspring &mdash; Bench queue</span>
+        </div>
+        <table class="bench-table">
+          <thead>
+            <tr><th>Ticket</th><th>Item</th><th>Owner</th><th>Status</th><th>Promised</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="mono">MS-1038</td>
+              <td>Omega Seamaster, cal. 552</td>
+              <td>R.&nbsp;Whitfield</td>
+              <td><span class="tag tag-amber">Awaiting parts</span></td>
+              <td>18 Jul</td>
+            </tr>
+            <tr>
+              <td class="mono">MS-1041</td>
+              <td>Olympia SM3, 1957</td>
+              <td>D.&nbsp;Okafor</td>
+              <td><span class="tag tag-green">On the bench</span></td>
+              <td>11 Jul</td>
+            </tr>
+            <tr>
+              <td class="mono">MS-1042</td>
+              <td>Vienna regulator, 8-day</td>
+              <td>M.&nbsp;Ferreira</td>
+              <td><span class="tag tag-blue">Estimate sent</span></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <td class="mono">MS-1043</td>
+              <td>Nikon F2, prism &amp; meter</td>
+              <td>J.&nbsp;Lindqvist</td>
+              <td><span class="tag tag-ink">Received</span></td>
+              <td>25 Jul</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature">
+          <h3>Intake in under a minute</h3>
+          <p>Photos, serial numbers, condition notes and the customer&rsquo;s details,
+          straight from the counter. Prints a claim ticket with a QR code on any
+          receipt printer, or on plain paper if that&rsquo;s what the shop has.</p>
+        </article>
+        <article class="feature">
+          <h3>Estimates, approved in writing</h3>
+          <p>Send the estimate by text or email. The customer taps once to approve,
+          and the approval is stamped on the job forever. No more &ldquo;I never agreed
+          to that&rdquo; at the counter.</p>
+        </article>
+        <article class="feature">
+          <h3>The parts drawer</h3>
+          <p>Track donor movements, NOS stock and platen rubber by drawer and bin.
+          When a mainspring for that calibre finally turns up, Mainspring tells you
+          which waiting job wanted it.</p>
+        </article>
+        <article class="feature">
+          <h3>Service reminders</h3>
+          <p>A clock wants oiling every three to five years; a serviced watch wants
+          a pressure test. Mainspring writes to your customers when their machines
+          are due back, which brings in repeat work without a marketing department.</p>
+        </article>
+        <article class="feature">
+          <h3>The ledger</h3>
+          <p>Every job, part and payment in one register, with month-end exports
+          as CSV for whoever does the books. Your records outlive any subscription:
+          leave whenever you like and take everything with you.</p>
+        </article>
+        <article class="feature">
+          <h3>Fine without the internet</h3>
+          <p>Intake and job updates keep running on the shop computer when the
+          connection drops, and sync when it returns. It works the same on a
+          bench with two bars of signal as it does on a high street.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 STATUS PAGES ============ -->
+  <section class="section" id="status">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-no">03</span>
+        <h2>A status page for every job,<br>and a direct line when it matters.</h2>
+      </div>
+      <div class="split split-rev">
+        <div class="prose">
+          <p>
+            Every claim ticket carries a QR code and a short link. The customer
+            scans it and sees exactly where their piece is: received, diagnosed,
+            waiting on your approval, on the bench, ready for collection. It
+            updates the moment you move the job, with no extra typing, so the
+            answer to &ldquo;is it ready yet?&rdquo; is already sitting in their pocket.
+            The panel on this page is live, so try looking up one of the sample
+            tickets.
+          </p>
+          <h3 class="prose-sub">Photos, when they&rsquo;re asked for</h3>
+          <p>
+            When a customer wants to see progress, attach a photo to any update:
+            the movement stripped on the bench, the platen before and after. It
+            stays the shop&rsquo;s choice, job by job. Some work deserves to be seen,
+            and some should simply come home finished.
+          </p>
+          <h3 class="prose-sub">A conversation, kept with the job</h3>
+          <p>
+            Repair is a personal trade, and half the hard decisions are
+            sentimental rather than technical: whether to polish out sixty years
+            of wear or leave it exactly as a grandfather left it. Every job
+            carries a private message thread between the shop and the owner, so
+            that conversation happens in writing, next to the estimate and the
+            photos, instead of in a voicemail nobody can find later. Look up
+            MS-1042 to read one.
+          </p>
+        </div>
+
+        <div class="status-demo" id="status-demo">
+          <form class="status-form" id="status-form">
+            <label for="ticket-input">Ticket number</label>
+            <div class="status-input-row">
+              <input type="text" id="ticket-input" name="ticket" placeholder="MS-1042" autocomplete="off" spellcheck="false">
+              <button type="submit" class="btn btn-solid">Look up</button>
+            </div>
+            <div class="status-samples">
+              Try: <button type="button" data-ticket="MS-1038">MS-1038</button>
+              <button type="button" data-ticket="MS-1041">MS-1041</button>
+              <button type="button" data-ticket="MS-1042">MS-1042</button>
+            </div>
+          </form>
+          <div class="status-result" id="status-result" aria-live="polite">
+            <p class="status-empty">Enter a ticket number to see its journey.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 PRICING ============ -->
+  <section class="section section-tint" id="pricing">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-no">04</span>
+        <h2>Priced like a trade tool,<br>not a tech product.</h2>
+      </div>
+
+      <div class="billing-toggle" role="group" aria-label="Billing period">
+        <button class="toggle-opt is-active" data-period="monthly" type="button">Monthly</button>
+        <button class="toggle-opt" data-period="annual" type="button">Annual <em>(two months free)</em></button>
+      </div>
+
+      <div class="price-grid">
+        <article class="plan">
+          <h3>Solo bench</h3>
+          <p class="plan-for">One repairer, one till.</p>
+          <p class="plan-price"><span class="amount" data-monthly="19" data-annual="15">$19</span><span class="per">/month</span></p>
+          <ul>
+            <li>Unlimited jobs &amp; customers</li>
+            <li>Status pages &amp; QR claim tickets</li>
+            <li>Estimate approvals by email</li>
+            <li>CSV export, always</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="#waitlist">Join the waitlist</a>
+        </article>
+
+        <article class="plan plan-featured">
+          <p class="plan-flag">Most shops</p>
+          <h3>Shop</h3>
+          <p class="plan-for">Up to five people at the bench.</p>
+          <p class="plan-price"><span class="amount" data-monthly="44" data-annual="36">$44</span><span class="per">/month</span></p>
+          <ul>
+            <li>Everything in Solo bench</li>
+            <li>Text-message estimates &amp; alerts</li>
+            <li>Service reminders (the repeat-work engine)</li>
+            <li>Parts drawer &amp; donor tracking</li>
+            <li>Priority help from a human</li>
+          </ul>
+          <a class="btn btn-solid btn-block" href="#waitlist">Join the waitlist</a>
+        </article>
+
+        <article class="plan">
+          <h3>Counter</h3>
+          <p class="plan-for">Multiple locations or a wholesale bench.</p>
+          <p class="plan-price"><span class="amount" data-monthly="89" data-annual="74">$89</span><span class="per">/month</span></p>
+          <ul>
+            <li>Everything in Shop</li>
+            <li>Unlimited staff &amp; locations</li>
+            <li>Trade accounts &amp; batch intake</li>
+            <li>Onboarding done with you, on a call</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="#waitlist">Join the waitlist</a>
+        </article>
+      </div>
+
+      <p class="fineprint center">Thirty days free on every plan at launch. Cancel by pressing a button, not by writing a letter.</p>
+    </div>
+  </section>
+
+  <!-- ============ 05 FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="wrap wrap-narrow">
+      <div class="section-head">
+        <span class="section-no">05</span>
+        <h2>Fair questions.</h2>
+      </div>
+
+      <details class="faq-item">
+        <summary>I&rsquo;ve run this shop on paper for thirty years. Why change now?</summary>
+        <p>You don&rsquo;t have to change how you work, only where the ticket lives.
+        Intake takes the same minute it takes to fill in a paper tag. What changes
+        is everything after: the customer stops calling, the estimate is in writing,
+        and the job history is still there in ten years. If you want to keep a
+        paper ticket in your hand at the counter, print Mainspring&rsquo;s instead of
+        the carbon-paper pad; it just happens to carry a QR code too.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What happens to my records if I stop paying?</summary>
+        <p>They&rsquo;re yours. Everything from customers and jobs to notes and photos
+        exports as CSV and standard files at any time, including after you cancel.
+        Your account stays readable (not writable) for twelve months after your
+        last payment, free.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Does it work when the internet doesn&rsquo;t?</summary>
+        <p>Intake and job updates keep working offline on the shop computer or
+        tablet and sync when the connection returns. It has to, because you
+        don&rsquo;t get to choose your internet connection when you choose your
+        workshop.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>I repair something you haven&rsquo;t listed. Can I still use it?</summary>
+        <p>Almost certainly. If a thing arrives at a counter and leaves in better
+        order than it came, Mainspring fits, whether that thing is an accordion,
+        a barometer, a reel-to-reel or a bicycle built before you were born. The
+        trade presets just save you typing.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============ WAITLIST ============ -->
+  <section class="closing" id="waitlist">
+    <div class="wrap">
+      <h2>Forty years of goodwill<br>deserves better than a shoebox of tickets.</h2>
+      <p class="closing-sub">
+        Mainspring opens to a first group of shops this autumn. Leave your
+        email and we&rsquo;ll write when your bench is ready; founding shops
+        get three months free.
+      </p>
+      <!-- Waitlist form. Replace YOUR_FORM_ID with your Formspree form ID
+           (free at formspree.io) and submissions land in your inbox. -->
+      <form class="waitlist-form" id="waitlist-form"
+            action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="email" name="email" required
+               placeholder="you@theshop.com" aria-label="Email address"
+               autocomplete="email">
+        <select name="trade" aria-label="Your trade">
+          <option value="" selected>Your trade (optional)</option>
+          <option>Clock &amp; watch repair</option>
+          <option>Typewriters</option>
+          <option>Film cameras</option>
+          <option>Fountain pens</option>
+          <option>Sewing machines</option>
+          <option>Audio &amp; radio</option>
+          <option>Something else entirely</option>
+        </select>
+        <button class="btn btn-solid btn-lg" type="submit">Join the waitlist</button>
+      </form>
+      <p class="form-note" id="waitlist-note">One email when your invitation is ready. Nothing else, ever.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <a class="wordmark" href="#top">Main<span>spring</span></a>
+      <p class="footer-tag">Shop software for the trades everyone forgot.</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="#product">Product</a>
+      <a href="#status">Status pages</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <p class="footer-legal">&copy; <span id="year"></span> Mainspring. Wind it, don&rsquo;t bin it.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
