@@ -168,7 +168,7 @@
       opt.classList.add("is-active");
       var period = opt.dataset.period;
       document.querySelectorAll(".plan-price .amount").forEach(function (el) {
-        el.textContent = "$" + el.dataset[period];
+        el.textContent = "£" + el.dataset[period];
       });
     });
   });
