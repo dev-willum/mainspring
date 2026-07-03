@@ -1,4 +1,4 @@
-/* Mainspring — landing page interactions */
+/* FettleFix — landing page interactions */
 (function () {
   "use strict";
 
@@ -200,7 +200,7 @@
         btn.textContent = "Join the waitlist";
         wNote.className = "form-note is-error";
         wNote.textContent =
-          "That didn’t go through. Please try again, or email hello@mainspring.example.";
+          "That didn’t go through. Please try again, or email hello@fettlefix.example.";
       });
   });
 

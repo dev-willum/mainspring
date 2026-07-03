@@ -1,4 +1,4 @@
-# Mainspring — landing page
+# FettleFix — landing page
 
 Static site, no build step: `index.html`, `styles.css`, `app.js`.
 
@@ -11,20 +11,19 @@ Static site, no build step: `index.html`, `styles.css`, `app.js`.
 
 Submissions arrive in your email; Formspree's free tier covers 50/month.
 
-## Deploy to GitHub Pages
+## Deploy to Cloudflare Pages
 
-```
-git init
-git add .
-git commit -m "Mainspring landing page"
-gh repo create mainspring --public --source . --push
-```
+The repo is already pushed to GitHub. To connect it:
 
-(Or create the repo on github.com and `git remote add origin … && git push -u origin main`.)
+1. Go to [dash.cloudflare.com](https://dash.cloudflare.com) and sign up or log in.
+2. **Workers & Pages** → **Create application** → **Pages** tab → **Connect to Git**.
+3. Authorize Cloudflare's GitHub app and select this repo.
+4. Build settings: Framework preset **None**, Build command *(empty)*, Build output
+   directory `/`.
+5. **Save and Deploy.**
 
-Then on GitHub: **Settings → Pages → Source: Deploy from a branch → main / (root) → Save.**
-The site goes live at `https://<your-username>.github.io/mainspring/` within a minute or two.
+Every `git push` to `main` auto-redeploys. It's pure CDN, so there's no cold
+start or sleep state to wait through.
 
-All asset paths are relative, so the repo-subpath URL works without changes.
-To use a custom domain later, add it under Settings → Pages and create the
-DNS records GitHub shows you.
+To use a custom domain, add it under the Pages project's **Custom domains** tab
+once you own one.
