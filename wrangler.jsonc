@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developers.cloudflare.com/workers/wrangler/config-schema.json",
+  "name": "fettlefix",
+  "compatibility_date": "2026-07-03",
+  "assets": {
+    "directory": "./"
+  },
+  "routes": [
+    { "pattern": "fettlefix.com", "custom_domain": true }
+  ],
+  "workers_dev": false
+}
